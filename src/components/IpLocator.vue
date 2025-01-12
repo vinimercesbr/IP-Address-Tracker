@@ -1,8 +1,8 @@
 <template>
-  <div id="card"  class="-mt-9 desktop:mb-5 desktop:mx-10 mobile:ml-8 mobile:mr-0 desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold  desktop:max-h-[30%]  mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[75%] mobile:max-w-[80%] touch-none">
+  <div id="card"  class="-mt-9 desktop:mb-5 desktop:mx-10 mobile:ml-8  mobile:mr-0 desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold  desktop:max-h-[30%]  mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[80%] mobile:max-w-[85%] touch-none">
     <div class="manager">
-      <a>IP ADDRESS</a>
-      <strong>
+      <a class="border-none">IP ADDRESS</a>
+      <strong class="border-none">
         {{ ipData.ip }}
       </strong>
     </div>
@@ -14,14 +14,14 @@
         {{ ipData.cep}}
       </strong>
     </div>
-    <div class="manager">
+    <div class="manager desktop:mr-10">
       <a>TIMEZONE</a>
-      <strong>
-        <p>UTC{{ ipData.timezone }}</p>
-       
+      <strong class="flex">
+        <p>UTC</p>
+       <p>{{ ipData.timezone }}</p>
       </strong>
     </div>
-    <div class="manager">
+    <div class="manager desktop:mr-6">
       <a>ISP</a>
       <strong >
         {{ ipData.isp }}
@@ -101,16 +101,16 @@ export default {
         @apply text-sm -ml-1 pt-1 text-[11px] whitespace-pre text-[350] text-[#969696];
     };*/
         .manager {
-        @apply flex text-center  desktop:text-start justify-items-center mobile:p-3 mobile:px-1 desktop:whitespace-nowrap mobile:whitespace-break-spaces desktop:p-5 desktop:pl-5 desktop:pr-3  flex-col;
+        @apply flex text-center  desktop:text-start justify-items-center mobile:p-3 mobile:px-1 desktop:p-5 desktop:pl-8 desktop:pr-0 flex-col;
     }
 
     .manager strong {
-        @apply pt-1 desktop:-ml-1 mobile:text-center desktop:border-l desktop:border-[#f969696] desktop:pl-5 text-base font-[590];
+        @apply pt-1 desktop:-ml-1 mobile:text-center whitespace-nowrap desktop:border-l mobile:whitespace-break-spaces desktop:border-[#f969696] desktop:pl-5 text-base  font-[590];
     
     }
           
 
     .manager a {
-        @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre desktop:border-l desktop:border-[#f969696] text-[400] text-[#969696];
+        @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px] desktop:border-l desktop:border-[#f969696] text-[400] text-[#969696];
     };
 </style>
