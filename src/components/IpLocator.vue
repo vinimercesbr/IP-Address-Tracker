@@ -1,5 +1,5 @@
 <template>
-  <div id="card"  class="-mt-9 desktop:mb-5 ml-9 desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold  desktop:max-h-[30%]  mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[75%] mobile:max-w-[80%] touch-none">
+  <div id="card"  class="-mt-9 desktop:mb-5 desktop:mx-10 mobile:ml-8 mobile:mr-0 desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold  desktop:max-h-[30%]  mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[75%] mobile:max-w-[80%] touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong>
@@ -101,11 +101,11 @@ export default {
         @apply text-sm -ml-1 pt-1 text-[11px] whitespace-pre text-[350] text-[#969696];
     };*/
         .manager {
-        @apply flex text-center  desktop:text-start justify-items-center mobile:p-3 desktop:p-5  desktop:mr-8 flex-col;
+        @apply flex text-center  desktop:text-start justify-items-center mobile:p-3 mobile:px-1 desktop:whitespace-nowrap mobile:whitespace-break-spaces desktop:p-5 desktop:pl-5 desktop:pr-3  flex-col;
     }
 
     .manager strong {
-        @apply pt-1 desktop:-ml-1 mobile:text-center desktop:border-l desktop:border-[#f969696] desktop:pl-5 text-base font-[590] whitespace-break-spaces  ;
+        @apply pt-1 desktop:-ml-1 mobile:text-center desktop:border-l desktop:border-[#f969696] desktop:pl-5 text-base font-[590];
     
     }
           
