@@ -1,5 +1,5 @@
 <template>
-  <div id="card"  class="-mt-9 desktop:mb-5 desktop:mx-10 desktop:px-6 mobile:ml-8  mobile:mr-0 desktop:inline-flex absolute p-3 bg-white desktop:py-0 desktop:text-justify rounded-xl items-center justify-items-center font-semibold desktop:max-h-[35%]  mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[80%] mobile:max-w-[80%] touch-none">
+  <div id="card"  class="-mt-9 desktop:mb-5 desktop:ml-4 desktop:px-6 mobile:ml-8  mobile:mr-0 desktop:inline-flex absolute p-3 bg-white desktop:py-0 desktop:text-justify rounded-xl items-center justify-items-center font-semibold desktop:max-h-[45vh] mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[80%] mobile:max-w-[80%] touch-none">
     <div class="manager desktop:-ml-5">
       <a class="border-none">IP ADDRESS</a>
       <strong class="border-none">
@@ -14,7 +14,7 @@
         {{ ipData.cep}}
       </strong>
     </div>
-    <div class="manager desktop:mr-8">
+    <div class="manager  desktop:mr-8">
       <a>TIMEZONE</a>
       <strong class="flex">
         <p>UTC</p>
@@ -101,7 +101,7 @@ export default {
         @apply text-sm -ml-1 pt-1 text-[11px] whitespace-pre text-[350] text-[#969696];
     };*/
         .manager {
-        @apply flex text-center  desktop:text-start justify-items-center whitespace-break-spaces mobile:p-3 mobile:px-1 desktop:p-5 desktop:pl-8 desktop:pr-0 flex-col;
+        @apply flex text-center  desktop:text-start justify-items-center mobile:whitespace-break-spaces  desktop:whitespace-nowrap mobile:p-3 mobile:px-1 desktop:p-5 desktop:pl-8 desktop:pr-0 flex-col;
     }
 
     .manager strong {
