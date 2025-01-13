@@ -14,7 +14,7 @@
         {{ ipData.cep}}
       </strong>
     </div>
-    <div class="manager desktop:mr-10">
+    <div class="manager">
       <a>TIMEZONE</a>
       <strong class="flex">
         <p>UTC</p>
@@ -105,12 +105,13 @@ export default {
     }
 
     .manager strong {
-        @apply pt-1 desktop:-ml-1 mobile:text-center whitespace-nowrap desktop:border-l mobile:whitespace-break-spaces desktop:border-[#f969696] desktop:pl-5 text-base  font-[590];
+        @apply pt-1 desktop:-ml-1 mobile:text-center  desktop:border-l whitespace-break-spaces desktop:border-[#f969696] desktop:pl-5 text-base  font-[590];
     
     }
           
 
     .manager a {
-        @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px] desktop:border-l desktop:border-[#f969696] text-[400] text-[#969696];
+        @apply text-sm -ml-1 
+         desktop:pl-5 text-[11px] desktop:border-l desktop:border-[#f969696] text-[400] text-[#969696];
     };
 </style>
