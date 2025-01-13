@@ -1,3 +1,3 @@
 # Description:
 
-This solution for the [frontend-mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0) challenge uses [Maplibre](https://maplibre.org/) to create maps instead of [Leaflet](https://leafletjs.com/), along with [ip-api](https://ip-api.com/) in place of [ipify](https://www.ipify.org/). The frameworks used are [Tailwindcss](https://tailwindcss.com/) and [Vue.js](https://vuejs.org/).
+This solution for the [frontend-mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0) challenge uses [Maplibre](https://maplibre.org/) to create maps instead of [Leaflet](https://leafletjs.com/), along with [ipgeolocation](https://ipgeolocation.io/) in place of [ipify](https://www.ipify.org/). The frameworks used are [Tailwindcss](https://tailwindcss.com/) and [Vue.js](https://vuejs.org/).
